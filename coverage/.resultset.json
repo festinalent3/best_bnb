@@ -43,13 +43,14 @@
         1,
         1,
         null,
-        null,
         1,
         null,
         1,
-        null,
         1,
-        1
+        1,
+        null,
+        null,
+        null
       ],
       "/Users/emmasjostrom/Projects/best_bnb/app/models/user.rb": [
         1,
@@ -151,7 +152,6 @@
       ],
       "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_in_spec.rb": [
         1,
-        null,
         1,
         1,
         1,
@@ -167,6 +167,7 @@
         null
       ],
       "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_out_spec.rb": [
+        1,
         1,
         1,
         1,
@@ -205,6 +206,6 @@
         null
       ]
     },
-    "timestamp": 1463421921
+    "timestamp": 1463422712
   }
 }

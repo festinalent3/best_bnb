@@ -16,6 +16,8 @@ class DateRange
     mark_booked_dates(booked_range)
   end
 
+
+
   private
 
   def mark_booked_dates(b_range, arr = [])

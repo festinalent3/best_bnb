@@ -22,4 +22,5 @@ let(:booked_range){ [:booked, :booked, :booked] }
       daterange.book_dates(book_from, book_to)
       expect(daterange.range).to eq([*Date.parse(from_date)...Date.parse(book_from)] + booked_range + [*Date.parse(book_to)..Date.parse(to_date)])
     end
+
 end

@@ -1,9 +1,10 @@
 class Space
 
-  include DataMapper::Resource 
-
-  belongs_to :user
+  include DataMapper::Resource
 
   property :id, Serial
+  property :title, String
 
+  belongs_to :user
+  
 end

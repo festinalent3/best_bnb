@@ -1,4 +1,5 @@
 class Beast < Sinatra::Base
+
 	get '/sessions/new' do
 	 	erb :'sessions/new'
 	end
@@ -6,6 +7,7 @@ class Beast < Sinatra::Base
 	post '/sessions' do
 	  user = User.authenticate(params[:email], params[:password])
 	  if user
+			@spaces = Space.all
 	  	session[:user_id] = user.id
 	    redirect to('/spaces/all')
 	  else
@@ -15,6 +17,7 @@ class Beast < Sinatra::Base
 	end
 
 	delete '/sessions' do
+		@spaces = Space.all
 	  session[:user_id] = nil
 	  flash.keep[:notice] = 'goodbye!'
 	  redirect to '/spaces/all'

@@ -5,7 +5,7 @@ require_relative 'models/space'
 
 env = ENV['RACK_ENV'] || 'development'
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://namitha:root@localhost/beast_#{env}")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/beast_#{env}")
 DataMapper.finalize
 DataMapper.auto_upgrade!
 

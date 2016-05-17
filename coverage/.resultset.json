@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/emmasjostrom/Projects/best_bnb/app/app.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/app.rb": [
         1,
         null,
         1,
@@ -15,7 +15,7 @@
         null,
         1
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/server.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/server.rb": [
         1,
         null,
         1,
@@ -38,7 +38,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/data_mapper_setup.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -53,7 +53,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/models/user.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -85,7 +85,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/controllers/users.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/controllers/users.rb": [
         1,
         null,
         1,
@@ -110,7 +110,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/controllers/sessions.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/controllers/sessions.rb": [
         1,
         1,
         3,
@@ -134,21 +134,36 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/app/models/date_range.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/app/models/date_range.rb": [
         1,
         null,
         1,
         null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        5,
         null,
         null,
         1,
         1,
+        1,
         null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        18,
+        null,
+        1,
         null,
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/web_helpers.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/web_helpers.rb": [
         1,
         3,
         3,
@@ -165,7 +180,7 @@
         3,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_in_spec.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_in_spec.rb": [
         1,
         1,
         1,
@@ -181,7 +196,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_out_spec.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_out_spec.rb": [
         1,
         1,
         1,
@@ -193,7 +208,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_up_spec.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         2,
@@ -203,19 +218,34 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/models/date_range_spec.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/models/date_range_spec.rb": [
         1,
+        4,
+        4,
+        4,
+        3,
         2,
-        2,
-        2,
-        2,
+        null,
         null,
         1,
         1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/best_bnb/spec/models/user_spec.rb": [
+      "/Users/Luiz/Max/lab_week/best_bnb/spec/models/user_spec.rb": [
         1,
         1,
         2,
@@ -233,6 +263,6 @@
         null
       ]
     },
-    "timestamp": 1463485681
+    "timestamp": 1463491364
   }
 }

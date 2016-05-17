@@ -18,5 +18,14 @@ def add_space
   sign_up
   sign_in(email: 'max@beast.com', password: 'banana!')
   click_button 'List space'
+  fill_in 'title', with: 'Penthouse'
+  click_button 'Add space'
+end
+
+def add_another_space
+  sign_up
+  sign_in(email: 'max@beast.com', password: 'banana!')
+  click_button 'List space'
+  fill_in 'title', with: "Max's Beach House"
   click_button 'Add space'
 end

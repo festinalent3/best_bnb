@@ -8,9 +8,9 @@ feature 'User adds spaces' do
 
   scenario 'user can add multiple spaces' do
     add_space
-    add_space
-    expect(page).to have_content('1')
-    expect(page).to have_content('2')
+    add_another_space
+    expect(page).to have_content('Penthouse')
+    expect(page).to have_content("Max's Beach House")
   end
 
   scenario 'user adds details of the new space when signed in' do

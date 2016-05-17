@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/macpro/Projects/Week 6/BnB/app/app.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/app.rb": [
         1,
         null,
         1,
@@ -16,7 +16,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/app/server.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/server.rb": [
         1,
         null,
         1,
@@ -34,12 +34,12 @@
         null,
         1,
         1,
-        65,
+        56,
         null,
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/app/data_mapper_setup.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -54,7 +54,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/app/models/user.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -75,128 +75,140 @@
         1,
         null,
         1,
-        10,
-        10,
+        9,
+        9,
         null,
         null,
         1,
-        10,
-        10,
-        8,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/macpro/Projects/Week 6/BnB/app/models/space.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/users.rb": [
-        1,
-        null,
-        1,
-        8,
-        8,
-        null,
-        null,
-        1,
-        8,
-        null,
-        null,
-        null,
-        null,
-        null,
-        8,
-        8,
-        null,
-        null,
-        null
-      ],
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/sessions.rb": [
-        1,
-        null,
-        1,
-        8,
-        null,
-        null,
-        1,
-        8,
-        8,
+        9,
+        9,
         7,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/models/space.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/controllers/users.rb": [
+        1,
+        null,
+        1,
         7,
         7,
         null,
+        null,
         1,
-        1,
+        7,
         null,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
+        null,
+        null,
+        7,
+        7,
+        null,
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/spaces.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/controllers/sessions.rb": [
         1,
         null,
         1,
-        21,
-        21,
-        21,
+        7,
         null,
         null,
         1,
+        7,
+        7,
         6,
+        6,
+        6,
+        null,
         1,
         1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/controllers/spaces.rb": [
+        1,
+        null,
+        1,
+        18,
+        18,
+        18,
+        null,
+        null,
+        1,
         5,
+        1,
+        1,
+        null,
+        4,
         null,
         null,
         null,
         1,
-        4,
-        4,
-        4,
+        3,
+        null,
+        null,
+        3,
+        3,
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/web_helpers.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/web_helpers.rb": [
         1,
-        8,
-        8,
-        8,
-        8,
-        8,
-        8,
-        null,
-        null,
-        1,
-        8,
-        8,
-        8,
-        8,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
         null,
         null,
         1,
-        4,
-        4,
-        4,
-        4,
+        7,
+        7,
+        7,
+        7,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/add_space_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/features/add_space_spec.rb": [
         1,
         1,
         1,
@@ -226,7 +238,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_in_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/features/sign_in_spec.rb": [
         1,
         1,
         1,
@@ -242,7 +254,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_out_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/features/sign_out_spec.rb": [
         1,
         1,
         1,
@@ -254,7 +266,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_up_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         2,
@@ -264,15 +276,15 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/view_spaces_spec.rb": [
-        1,
-        1,
-        1,
-        1,
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/features/view_spaces_spec.rb": [
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/models/space_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/models/space_spec.rb": [
         1,
         1,
         0,
@@ -280,7 +292,7 @@
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/models/user_spec.rb": [
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/models/user_spec.rb": [
         1,
         1,
         2,
@@ -298,6 +310,6 @@
         null
       ]
     },
-    "timestamp": 1463487855
+    "timestamp": 1463489591
   }
 }

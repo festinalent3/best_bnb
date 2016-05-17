@@ -16,7 +16,9 @@ class Beast < Sinatra::Base
   end
 
   post '/spaces' do
-    @space = Space.create(user: User.get(session[:user_id]))
+    @space = Space.create(
+      title: params[:title],
+      user: User.get(session[:user_id]))
     flash.keep[:notice] = 'Space added'
     redirect to '/spaces/all'
   end

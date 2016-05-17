@@ -6,7 +6,7 @@
   <ul id='spaces'>
     <% @spaces.each do |space| %>
       <li>
-        <%= "#{space.id} by #{space.user.name}" %>
+        <%= space.title %> by <%= space.user.name %>
       </li>
     <% end %>
   </ul>

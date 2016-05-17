@@ -20,8 +20,7 @@ let(:booked_range){ [:booked, :booked, :booked] }
 
     it 'marks dates as booked within date_range' do
       daterange.book_dates(book_from, book_to)
-      expect(daterange.range).to eq([*from_date..book_from] + booked_range + [*book_to..to_date])
+      expect(daterange.range).to eq([*from_date...book_from] + booked_range + [*book_to..to_date])
     end
 
 end
-

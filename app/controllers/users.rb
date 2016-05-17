@@ -1,11 +1,11 @@
 class Beast < Sinatra::Base
 
-  get '/users/new' do 
+  get '/users/new' do
     @user = User.new
     erb :'/users/new'
   end
 
-  post '/users' do 
+  post '/users' do
     @user = User.create(
       name: params[:name],
       email: params[:email],
@@ -16,8 +16,4 @@ class Beast < Sinatra::Base
     @user.save ? redirect('/spaces/all') : erb(:'users/new')
   end
 
-  get '/spaces/all' do 
-    @user = current_user
-    erb :'spaces/all'
-  end
 end

@@ -1,10 +1,10 @@
 describe DateRange do
-let(:from_date) { Date.new(2016,2,13) }
-let(:to_date) { Date.new(2016,3,1) }
-let(:book_from) { Date.new(2016,2,15) }
-let(:book_to) { Date.new(2016,2,18) }
+let(:from_date) { '2016-2-13' }
+let(:to_date) { '2016-3-1' }
+let(:book_from) { '2016-2-15'}
+let(:book_to) { '2016-2-18' }
 let(:daterange) { described_class.new(from_date, to_date) }
-let(:range) { [*from_date..to_date] }
+let(:range) { [*Date.parse(from_date)..Date.parse(to_date)] }
 let(:booked_range){ [:booked, :booked, :booked] }
 
 
@@ -20,7 +20,6 @@ let(:booked_range){ [:booked, :booked, :booked] }
 
     it 'marks dates as booked within date_range' do
       daterange.book_dates(book_from, book_to)
-      expect(daterange.range).to eq([*from_date...book_from] + booked_range + [*book_to..to_date])
+      expect(daterange.range).to eq([*Date.parse(from_date)...Date.parse(book_from)] + booked_range + [*Date.parse(book_to)..Date.parse(to_date)])
     end
-
 end

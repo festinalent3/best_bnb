@@ -20,6 +20,8 @@ def add_space
   click_button 'List space'
   fill_in 'title', with: 'Penthouse'
   fill_in 'description', with: 'Glorious city views'
+  fill_in 'from_date', with: '2015-12-31'
+  fill_in 'to_date', with: '2016-1-1'
   click_button 'Add space'
 end
 
@@ -29,5 +31,18 @@ def add_another_space
   click_button 'List space'
   fill_in 'title', with: "Max's Beach House"
   fill_in 'description', with: "Fun getaway for the weekend"
+  fill_in 'from_date', with: '2015-12-31'
+  fill_in 'to_date', with: '2016-1-1'
+  click_button 'Add space'
+end
+
+def add_space_with_dates
+  sign_up
+  sign_in(email: 'max@beast.com', password: 'banana!')
+  click_button 'List space'
+  fill_in 'title', with: 'Penthouse'
+  fill_in 'description', with: 'Glorious city views'
+  fill_in 'from_date', with: '2015-12-31'
+  fill_in 'to_date', with: '2016-1-1'
   click_button 'Add space'
 end

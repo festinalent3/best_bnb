@@ -7,11 +7,12 @@ class DateRange
   end
 
   def generate_range(from_date, to_date)
-    return [*from_date..to_date]
+    return [*Date.parse(from_date)..Date.parse(to_date)]
   end
 
   def book_dates(book_from, book_to)
-    booked_range = self.generate_range(book_from, (book_to - 1))
+    booked_range = self.generate_range(book_from, (book_to))
+    booked_range.pop
     mark_booked_dates(booked_range)
   end
 

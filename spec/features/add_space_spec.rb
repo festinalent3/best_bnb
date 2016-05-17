@@ -6,11 +6,13 @@ feature 'User adds spaces' do
     expect(current_path).to eq '/spaces/new'
   end
 
-  scenario 'user can add multiple spaces' do
+  scenario 'user can add multiple spaces with titles and descriptions' do
     add_space
     add_another_space
     expect(page).to have_content('Penthouse')
     expect(page).to have_content("Max's Beach House")
+    expect(page).to have_content("Fun getaway for the weekend")
+    expect(page).to have_content("Glorious city views")
   end
 
   scenario 'user adds details of the new space when signed in' do

@@ -1,4 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/festinalent3/best_bnb.png?label=ready&title=Ready)](https://waffle.io/festinalent3/best_bnb)
+
+[![Build Status](https://travis-ci.org/festinalent3/best_bnb.svg?branch=fix-test-coverage)](https://travis-ci.org/festinalent3/best_bnb)
 #Headline specifications
 
 ```

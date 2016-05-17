@@ -8,6 +8,8 @@ class Beast < Sinatra::Base
   enable :sessions
   set :session_secret, 'super secret'
 
+  #The '/' route below causes bad server.rb test coverage,
+  #remember to test it when replacing it with something useful
   get '/' do
     'Hello Beast!'
   end

@@ -65,6 +65,8 @@
         1,
         null,
         1,
+        null,
+        1,
         1,
         1,
         1,
@@ -87,6 +89,8 @@
         null
       ],
       "/Users/benstein/Documents/Git/makers_academy/best_bnb/app/models/space.rb": [
+        1,
+        null,
         1,
         null,
         1,
@@ -246,6 +250,14 @@
         null,
         null
       ],
+      "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/models/space_spec.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/benstein/Documents/Git/makers_academy/best_bnb/spec/models/user_spec.rb": [
         1,
         1,
@@ -264,6 +276,6 @@
         null
       ]
     },
-    "timestamp": 1463480540
+    "timestamp": 1463482331
   }
 }

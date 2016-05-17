@@ -13,3 +13,10 @@ def sign_in(email:, password:)
   fill_in :password, with: password
   click_button 'Sign in'
 end
+
+def add_space
+  sign_up
+  sign_in(email: 'max@beast.com', password: 'banana!')
+  click_button 'List space'
+  click_button 'Add space'
+end

@@ -13,11 +13,11 @@ class Beast < Sinatra::Base
       password_confirmation: params[:password_confirmation]
     )
     session[:user_id] = @user.id
-    @user.save ? redirect('/listings/all') : erb(:'users/new')
+    @user.save ? redirect('/spaces/all') : erb(:'users/new')
   end
 
-  get '/listings/all' do 
+  get '/spaces/all' do 
     @user = current_user
-    erb :'listings/all'
+    erb :'spaces/all'
   end
 end

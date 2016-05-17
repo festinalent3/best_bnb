@@ -4,6 +4,7 @@ class Space
 
   property :id, Serial
   property :title, String
+  property :description, String, :length => 500
 
   belongs_to :user
   

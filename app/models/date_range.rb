@@ -7,6 +7,7 @@ class DateRange
   end
 
   def generate_range(from_date, to_date)
+    return false if (from_date == '' || to_date == '')
     return [*Date.parse(from_date)..Date.parse(to_date)]
   end
 

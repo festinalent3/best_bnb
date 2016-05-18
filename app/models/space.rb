@@ -5,7 +5,8 @@ class Space
   property :id, Serial
   property :title, String
   property :description, String, :length => 500
+  property :price, Integer
 
   belongs_to :user
-  
+
 end

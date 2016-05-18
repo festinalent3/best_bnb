@@ -18,6 +18,7 @@ class Beast < Sinatra::Base
   post '/spaces' do
     @space = Space.create(
       title: params[:title],
+      price: params[:price],
       description: params[:description],
       user: User.get(session[:user_id]))
     flash.keep[:notice] = 'Space added'

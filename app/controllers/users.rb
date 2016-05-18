@@ -2,7 +2,7 @@ class Beast < Sinatra::Base
 
   get '/users/new' do
     @user = User.new
-    erb :'/users/new'
+    erb :'/users/new', :layout => false
   end
 
   post '/users' do
@@ -12,8 +12,14 @@ class Beast < Sinatra::Base
       password: params[:password],
       password_confirmation: params[:password_confirmation]
     )
-    session[:user_id] = @user.id
-    @user.save ? redirect('/spaces/all') : erb(:'users/new')
+    if @user.save
+      session[:user_id] = @user.id
+      redirect('/spaces/all')
+    else
+      flash.now[:errors] = @user.errors.full_messages
+      erb(:'users/new')
+    end
   end
+
 
 end

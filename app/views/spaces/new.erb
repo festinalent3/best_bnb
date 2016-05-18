@@ -3,18 +3,18 @@
     <tr><td><label for="title">Space title:</label>
       <td><input type="text" name="title" />
     <tr><td><label for="price">Price: </label>
-      <td><input type="text" name="price" />
+      <td><input type="number" name="price" />
     <tr><td><label for="description">Description:</label>
       <td><textarea name="description" rows="5" cols="50" maxlength="500"></textarea>
   </table>
   <p>Availability dates for your space</p>
   <label for="from_date">
   	From:
-  <input type="date" name="from_date">
+  <input type="date" name="from_date" required>
   </label>
   <label for="to_date">
   	To:
-  <input type="date" name="to_date" >
+  <input type="date" name="to_date" required>
   </label>
   <input type='submit' value='Add space'>
 </form>

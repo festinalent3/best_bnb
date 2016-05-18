@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/app.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/app.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/app.rb": [
         1,
         null,
         1,
@@ -20,11 +16,7 @@
         null,
         1
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/server.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/server.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/server.rb": [
         1,
         null,
         1,
@@ -37,20 +29,12 @@
         null,
         1,
         1,
-<<<<<<< HEAD
-        73,
-=======
-        40,
->>>>>>> master
+        65,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/data_mapper_setup.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/data_mapper_setup.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -65,11 +49,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/models/user.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/models/user.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -90,173 +70,165 @@
         1,
         null,
         1,
+        14,
+        14,
+        null,
+        null,
+        1,
+        5,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/app/models/space.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/app/controllers/users.rb": [
+        1,
+        null,
+        1,
+        12,
+        12,
+        null,
+        null,
+        1,
+        12,
+        null,
+        null,
+        null,
+        null,
+        null,
+        12,
         11,
         11,
         null,
-        null,
         1,
-        11,
-        11,
-        9,
+        1,
+        null,
         null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/models/space.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/models/space.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/controllers/sessions.rb": [
         1,
         null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/controllers/users.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/users.rb": [
->>>>>>> master
-        1,
-        null,
-        1,
-        9,
-        9,
-        null,
-        null,
-        1,
-        9,
-        null,
-        null,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        9,
-        9,
-=======
-        7,
-        6,
-        6,
-        null,
-        1,
-        1,
-        null,
-        null,
->>>>>>> master
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/controllers/sessions.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/sessions.rb": [
-        1,
-        null,
->>>>>>> master
         1,
         0,
         null,
         null,
         1,
-        9,
+        3,
         null,
         null,
         1,
-        9,
-        9,
-        8,
-        8,
-        8,
+        3,
+        3,
+        2,
+        2,
+        2,
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/app/controllers/spaces.rb": [
-        1,
-        null,
-        1,
-        23,
-        23,
-        23,
-        null,
-        null,
-        1,
-        7,
-        1,
-        1,
-=======
-      "/Users/macpro/Projects/Week 6/BnB/app/controllers/spaces.rb": [
-        1,
-        null,
-        1,
-        17,
-        17,
-        17,
-        null,
-        null,
-        1,
-        4,
-        0,
-        0,
->>>>>>> master
-        null,
-        6,
         null,
         null,
         null,
         1,
-        5,
-        null,
-        null,
-        null,
-        null,
-<<<<<<< HEAD
-        5,
-        5,
-        null,
-        null
-      ],
-      "/Users/Luiz/Max/lab_week/best_bnb/app/models/date_range.rb": [
-=======
+        3,
+        3,
         3,
         3,
         null,
         null
       ],
-      "/Users/macpro/Projects/Week 6/BnB/app/models/date_range.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/app/controllers/spaces.rb": [
         1,
         null,
         1,
+        26,
+        26,
+        26,
+        null,
         null,
         1,
         8,
+        0,
+        0,
+        null,
+        8,
+        null,
         null,
         null,
         1,
-        10,
+        7,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        7,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/app/models/date_range.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        11,
+        11,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        13,
         null,
         null,
         1,
@@ -265,6 +237,8 @@
         1,
         null,
         null,
+        1,
+        2,
         null,
         null,
         1,
@@ -278,195 +252,174 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/web_helpers.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/web_helpers.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/spec/web_helpers.rb": [
         1,
-        9,
-        9,
-        9,
-        9,
-        9,
-        9,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
         null,
         null,
         1,
-        9,
-        9,
-        9,
-        9,
-        null,
-        null,
-        1,
-<<<<<<< HEAD
         3,
         3,
         3,
         3,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/add_space_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/date_space_spec.rb": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/request_to_hire_space_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_in_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_out_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/features/sign_up_spec.rb": [
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/emmasjostrom/Projects/best_bnb/spec/models/date_range_spec.rb": [
+        1,
+        5,
+        5,
         3,
         3,
-        3,
-        3,
-=======
         2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
->>>>>>> master
         null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-<<<<<<< HEAD
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/add_space_spec.rb": [
-=======
-        null
-      ],
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/add_space_spec.rb": [
->>>>>>> master
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        2,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/date_space_spec.rb": [
-        1,
-        1,
-        1,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_in_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_in_spec.rb": [
->>>>>>> master
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_out_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_out_spec.rb": [
->>>>>>> master
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/sign_up_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/features/sign_up_spec.rb": [
->>>>>>> master
-        1,
-        1,
-        2,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/features/view_spaces_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/models/date_range_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/models/date_range_spec.rb": [
->>>>>>> master
-        1,
-        4,
-        4,
-        2,
-        2,
-        4,
+        5,
         3,
         2,
-        null,
+        2,
         null,
         1,
         1,
@@ -474,6 +427,11 @@
         null,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
         1,
         1,
         null,
@@ -485,24 +443,15 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/models/space_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/models/space_spec.rb": [
+      "/Users/emmasjostrom/Projects/best_bnb/spec/models/space_spec.rb": [
         1,
->>>>>>> master
         1,
-        null,
-        null,
+        0,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/Luiz/Max/lab_week/best_bnb/spec/models/user_spec.rb": [
-=======
-      "/Users/macpro/Projects/Week 6/BnB/spec/models/user_spec.rb": [
->>>>>>> master
+      "/Users/emmasjostrom/Projects/best_bnb/spec/models/user_spec.rb": [
         1,
         1,
         2,
@@ -520,10 +469,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1463505609
-=======
-    "timestamp": 1463559897
->>>>>>> master
+    "timestamp": 1463580820
   }
 }

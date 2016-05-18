@@ -1,7 +1,6 @@
 feature 'User signs out' do
   scenario 'while being signed in' do
     sign_up
-    sign_in(email: 'max@beast.com', password: 'banana!')
     click_button 'Sign out'
     expect(page.status_code).to eq 200
     expect(page).to have_content('goodbye!')

@@ -29,4 +29,29 @@ class Beast < Sinatra::Base
       redirect to('/spaces/new')
     end
   end
+
+  post '/spaces/request' do
+    session[:space_id] = params[:space_id].to_i
+    redirect '/spaces/request'
+  end
+
+  get '/spaces/request' do
+    @space_id = session[:space_id]
+    erb :'spaces/request'
+  end
+
+  post '/spaces/confirmations/request' do
+    @space = Space.get(params[:space_id].to_i)
+    @space.available_dates.request_dates(params[:check_in_date],
+    params[:check_out_date],
+    session[:user_id])
+    redirect '/spaces/confirmations/request'
+  end
+
+  get '/spaces/confirmations/request' do
+    erb :'/spaces/confirmations/request'
+  end
+
+
+
 end

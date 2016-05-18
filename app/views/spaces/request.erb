@@ -1,0 +1,16 @@
+<% @space = Space.get(@space_id) %>
+<%= @space.title %>
+
+<br><br><form method="post" action="/spaces/confirmations/request">
+  <p>Availability dates for your space</p>
+  <label for="check_in_date">
+  	From:
+  <input type="date" name="check_in_date">
+  </label>
+  <label for="check_out_date">
+  	To:
+  <input type="date" name="check_out_date" >
+  </label>
+  <input type="hidden" name ="space_id" value ="<%= @space_id %>">
+  <input type='submit' value='Request to rent!'>
+</form>

@@ -43,3 +43,11 @@ def add_another_space
   fill_in 'to_date', with: '2016-01-15'
   click_button 'Add space'
 end
+
+def click_rent_button
+  add_space
+  click_button 'Sign out'
+  sign_up_renter
+  visit '/spaces/all'
+  click_button 'Rent this space'
+end

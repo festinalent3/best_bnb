@@ -8,7 +8,7 @@ describe DateRange do
   let(:daterange) { described_class.new(from_date, to_date) }
   let(:range) { [*Date.parse(from_date)..Date.parse(to_date)] }
   let(:booked_range){ [:booked, :booked, :booked] }
-  let(:requested_range){ [{:user_id => {:check_in_date => book_from, :check_out_date => book_to}}] }
+  let(:requested_range){ [{user_id => {:check_in_date => book_from, :check_out_date => book_to}}] }
 
   describe '#generate_range' do
     it 'creates a range' do

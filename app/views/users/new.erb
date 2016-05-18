@@ -1,17 +1,21 @@
 <h2>Sign up to BEEEAAAST!</h2>
-
 <form action='/users' method='post'>
-  <label for='name'>Name: </label>
-    <input name='name' type='text' value='' required>
+  <table>
+  <tr><td><label for='name'>Name: </label>
+    <td><input name='name' type='text' placeholder="Name"value="<%= @user.name %>" required>
 
-  <label for='email'>Email: </label>
-    <input name='email' type='email' value='' required>
+  <tr><td><label for='email'>Email: </label>
+    <td><input name='email' type='email' placeholder="Email"value="<%= @user.email %>" required>
 
-  <label for='password'>Password: </label>
-    <input name='password' type='password' required>
+  <tr><td><label for='password'>Password: </label>
+    <td><input name='password' placeholder="Password"type='password' required>
 
-  <label for='password_confirmation'>Confirm Password: </label>
-    <input name='password_confirmation' type='password'>
+  <tr><td><label for='password_confirmation'>Confirm Password: </label>
+    <td><input name='password_confirmation' placeholder="Password"type='password'>
   <br>
-  <input type='submit' value='Sign up' class="btn btn-medium btn-primary">
+  </table>
+  <input style="float:left"type='submit' value='Sign up'>
+</form>
+<form action='/sessions/new' method='get'>
+  <input style="float:left"type='submit' value='Sign in'>
 </form>

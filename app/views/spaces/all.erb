@@ -1,14 +1,16 @@
-<form method="get" action="/spaces/new">
-  <input type='submit' value='List space'>
-</form>
-
+<center>
 <h1> Spaces Available </h1>
+</center>
   <ul id='spaces'>
     <% @spaces.each do |space| %>
       <li>
-        <%= space.title %> by <%= space.user.name %>
-        <%= space.description %>
-        $<%= space.price %> a night
+        <h3> Name of place: </h3>
+        <%= space.title %><br>
+        <h4> Owner </h4>
+         <%= space.user.name %><br>
+        $<%= space.price %> a night<br>
+        Description:
+        <%= space.description %><br>
       </li>
     <% end %>
   </ul>

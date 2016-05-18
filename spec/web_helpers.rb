@@ -30,7 +30,7 @@ def add_space
   fill_in 'price', with: '99.00'
   fill_in 'description', with: 'Glorious city views'
   fill_in 'from_date', with: '2015-12-31'
-  fill_in 'to_date', with: '2016-1-1'
+  fill_in 'to_date', with: '2016-01-15'
   click_button 'Add space'
 end
 
@@ -40,6 +40,6 @@ def add_another_space
   fill_in 'price', with: "110.00"
   fill_in 'description', with: "Fun getaway for the weekend"
   fill_in 'from_date', with: '2015-12-31'
-  fill_in 'to_date', with: '2016-1-1'
+  fill_in 'to_date', with: '2016-01-15'
   click_button 'Add space'
 end

@@ -11,6 +11,9 @@
         $<%= space.price %> a night<br>
         Description:
         <%= space.description %><br>
+        <%= space.title %> by <%= space.user.name %><br>
+        <%= space.description %><br>
+        Available from: <%= space.available_dates.range.first %>, to: <%= space.available_dates.range.last %>
       </li>
     <% end %>
   </ul>

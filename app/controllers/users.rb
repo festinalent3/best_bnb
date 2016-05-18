@@ -13,6 +13,10 @@ class Beast < Sinatra::Base
       password_confirmation: params[:password_confirmation]
     )
     if @user.save
+      # Pony.mail to: params[:email],
+      #      from: 'thebeastteam@beast.com',
+      #      subject: 'Welcome to the BEAST!',
+      #      body: "Thanks for signing up"
       session[:user_id] = @user.id
       redirect('/spaces/all')
     else
@@ -20,6 +24,5 @@ class Beast < Sinatra::Base
       erb(:'users/new')
     end
   end
-
 
 end

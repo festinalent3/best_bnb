@@ -26,6 +26,4 @@ feature 'User adds spaces' do
     visit '/spaces/all'
     expect(page).not_to have_button('List space')
   end
-
-
 end

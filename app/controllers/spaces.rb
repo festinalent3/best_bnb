@@ -25,4 +25,14 @@ class Beast < Sinatra::Base
     flash.keep[:notice] = 'Space added'
     redirect to '/spaces/all'
   end
+
+  post '/spaces/request' do 
+    session[:space_id] = params[:space_id].to_i
+    redirect '/spaces/request'
+  end
+
+  get '/spaces/request' do 
+    @space_id = session[:space_id]
+    erb :'spaces/request'
+  end
 end

@@ -1,7 +1,11 @@
 class Beast < Sinatra::Base
 
+	get '/' do
+		redirect to('/spaces/all')
+	end
+
 	get '/sessions/new' do
-	 	erb :'sessions/new'
+	 	erb :'sessions/new', :layout => false
 	end
 
 	post '/sessions' do

@@ -23,6 +23,14 @@ body {
   font-weight: bold;
 }
 
+.caption {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: #EEE;
+}
+
+/***FORM STYLING***/
 .form-top {
   overflow: hidden;
   padding: 0 25px 15px 25px;

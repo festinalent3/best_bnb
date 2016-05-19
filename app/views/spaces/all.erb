@@ -4,14 +4,10 @@
   <ul id='spaces'>
     <% @spaces.each do |space| %>
       <li>
-        <h3> Name of place: </h3>
-        <%= space.title %><br>
-        <h4> Owner </h4>
-         <%= space.user.name %><br>
+        <h3> Name of place: <%= space.title %></h3><br>
+        <h4> Owner: <%= space.user.name %></h4><br>
         $<%= space.price %> a night<br>
         Description:
-        <%= space.description %><br>
-        <%= space.title %> by <%= space.user.name %><br>
         <%= space.description %><br>
         Available from: <%= space.available_dates.range.first %>, to: <%= space.available_dates.range.last %>
 

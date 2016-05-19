@@ -25,5 +25,6 @@ feature 'User adds spaces' do
   scenario 'user cannot add space if not signed in' do
     visit '/spaces/all'
     expect(page).not_to have_button('List space')
+    expect(current_path).to eq '/spaces/all'
   end
 end

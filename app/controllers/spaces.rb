@@ -30,6 +30,32 @@ class Beast < Sinatra::Base
     end
   end
 
+  get '/spaces/edit' do
+    @space_id = session[:space_id]
+    erb :'spaces/edit'
+  end
+
+  post '/spaces/edit' do 
+    session[:space_id] = params[:space_id]
+    redirect '/spaces/edit'
+  end
+
+  post '/spaces/update' do 
+    if DateRange.new(params[:from_date], params[:to_date]).range
+      @space = Space.get(params[:space_id].to_i)
+      @space.update(
+        :title => params[:title], 
+        :price => params[:price],
+        :description => params[:description],
+        :available_dates => DateRange.new(params[:from_date], params[:to_date])
+      )
+      redirect '/spaces/all'
+    else
+      flash.keep[:notice] = 'You must update available dates!'
+      redirect '/spaces/edit'
+    end
+  end
+
   post '/spaces/request' do
     session[:space_id] = params[:space_id].to_i
     redirect '/spaces/request'

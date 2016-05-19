@@ -42,9 +42,10 @@ class Beast < Sinatra::Base
 
   post '/spaces/confirmations/request' do
     @space = Space.get(params[:space_id].to_i)
-    @space.update(@space.available_dates.request_dates(params[:check_in_date],
-     params[:check_out_date],
-     session[:user_id]))
+    @space.update(:requested_dates => @space.available_dates.request_dates(params[:check_in_date],
+    params[:check_out_date],
+    session[:user_id]))
+    # p @space
     redirect '/spaces/confirmations/request'
   end
 
@@ -54,8 +55,6 @@ class Beast < Sinatra::Base
 
   get '/spaces/confirmations/pending' do
     @user = User.get(session[:user_id].to_i)
-    p @user
-    #@dates= @user.available_dates.requested_dates
     erb :'/spaces/confirmations/pending'
   end
 end

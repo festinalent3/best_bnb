@@ -1,7 +1,10 @@
 [![Stories in Ready](https://badge.waffle.io/festinalent3/best_bnb.png?label=ready&title=Ready)](https://waffle.io/festinalent3/best_bnb)
 
 [![Build Status](https://travis-ci.org/festinalent3/best_bnb.svg?branch=fix-test-coverage)](https://travis-ci.org/festinalent3/best_bnb)
-#Headline specifications
+
+[![Coverage Status](https://coveralls.io/repos/github/festinalent3/best_bnb/badge.svg?branch=master)](https://coveralls.io/github/festinalent3/best_bnb?branch=master)
+
+#Headline specifications   
 
 ```
 As a non registered user

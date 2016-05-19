@@ -30,6 +30,11 @@ class Beast < Sinatra::Base
     end
   end
 
+  get '/spaces/edit' do
+    @space_id = params[:space_id].to_i
+    erb :'spaces/edit'
+  end
+
   post '/spaces/request' do
     session[:space_id] = params[:space_id].to_i
     redirect '/spaces/request'

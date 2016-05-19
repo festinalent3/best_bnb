@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/app.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/app.rb": [
         1,
         null,
         1,
@@ -17,7 +17,7 @@
         null,
         1
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/server.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/server.rb": [
         1,
         null,
         1,
@@ -35,7 +35,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/data_mapper_setup.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -50,7 +50,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/models/user.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/models/user.rb": [
         1,
         null,
         1,
@@ -84,7 +84,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/models/space.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/models/space.rb": [
         1,
         null,
         1,
@@ -100,7 +100,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/controllers/users.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/controllers/users.rb": [
         1,
         null,
         1,
@@ -130,7 +130,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/controllers/sessions.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/controllers/sessions.rb": [
         1,
         null,
         1,
@@ -161,7 +161,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/controllers/spaces.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/controllers/spaces.rb": [
         1,
         null,
         1,
@@ -206,10 +206,16 @@
         null,
         1,
         4,
-        4,
-        null,
         null,
         4,
+        3,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
         4,
         null,
         null,
@@ -223,7 +229,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/app/models/date_range.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/app/models/date_range.rb": [
         1,
         null,
         1,
@@ -259,7 +265,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/web_helpers.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/web_helpers.rb": [
         1,
         12,
         12,
@@ -314,7 +320,7 @@
         2,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/add_space_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/add_space_spec.rb": [
         1,
         1,
         1,
@@ -345,7 +351,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/approve_space_request_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/approve_space_request_spec.rb": [
         1,
         1,
         1,
@@ -385,14 +391,14 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/date_space_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/date_space_spec.rb": [
         1,
         1,
         1,
@@ -406,7 +412,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/request_to_hire_space_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/request_to_hire_space_spec.rb": [
         1,
         1,
         1,
@@ -422,7 +428,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/sign_in_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/sign_in_spec.rb": [
         1,
         1,
         1,
@@ -438,7 +444,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/sign_out_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/sign_out_spec.rb": [
         1,
         1,
         1,
@@ -449,7 +455,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/features/sign_up_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         2,
@@ -459,7 +465,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/models/date_range_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/models/date_range_spec.rb": [
         1,
         5,
         5,
@@ -494,7 +500,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/models/space_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/models/space_spec.rb": [
         1,
         1,
         0,
@@ -502,7 +508,7 @@
         null,
         null
       ],
-      "/Users/emmasjostrom/Projects/week6/best_bnb/spec/models/user_spec.rb": [
+      "/home/namitha/Desktop/namitha/week6/best_bnb/spec/models/user_spec.rb": [
         1,
         1,
         2,
@@ -520,6 +526,6 @@
         null
       ]
     },
-    "timestamp": 1463657506
+    "timestamp": 1463665291
   }
 }

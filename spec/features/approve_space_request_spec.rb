@@ -38,8 +38,8 @@ feature 'approve space request' do
     expect(page).to have_content('Namitha')
     expect(page).to have_content('2015-12-31')
     expect(page).to have_content('2016-01-05')
-
-    expect(page).to have_content('2015-01-01')
+    
+    expect(page).to have_content('2016-01-01')
     expect(page).to have_content('2016-01-06')
   end
 end

@@ -12,9 +12,9 @@ feature 'Edit Spaces' do
   scenario 'user can edit their space details' do
     add_space
     click_button 'Edit your space'
-    expect(page).to have_content('Penthouse')
-    expect(page).to have_content("$99 a night")
-    expect(page).to have_content("Glorious city views")
+    expect(page).to have_selector("input[value='Penthouse']")
+    expect(page).to have_selector("input[value='99']")
+    expect(page).to have_field('description', visible: 'Glorious city views')
     expect(page).not_to have_button 'Add space'
     expect(page).to have_button 'Cancel'
     expect(page).to have_button 'Submit changes'

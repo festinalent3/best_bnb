@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/festinalent3/best_bnb.svg?branch=fix-test-coverage)](https://travis-ci.org/festinalent3/best_bnb)
 
-[![Coverage Status][best_bnb-coverage-image]][best_bnb-coverage-url]
-[best_bnb-coverage-image]: https://coveralls.io/repos/festinalent3/best_bnb/badge.png
-[best_bnb-coverage-url]: https://coveralls.io/r/festinalent3/best_bnb
+[![Coverage Status](https://coveralls.io/repos/github/festinalent3/best_bnb/badge.svg?branch=master)](https://coveralls.io/github/festinalent3/best_bnb?branch=master)
 
 #Headline specifications   
 

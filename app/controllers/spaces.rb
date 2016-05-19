@@ -59,9 +59,9 @@ class Beast < Sinatra::Base
     @space = Space.get(params[:space_id].to_i)
     if @space.requested_dates == []
       add_first_request
-   else
-     add_more_requests
-   end
+    else
+      add_more_requests
+    end
     redirect '/spaces/confirmations/request'
   end
 
@@ -83,4 +83,5 @@ class Beast < Sinatra::Base
     book_space_these_dates
     redirect '/spaces/confirmations/booked'
   end
+  
 end

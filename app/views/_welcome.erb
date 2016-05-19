@@ -1,17 +1,17 @@
 <% if current_user %>
-  Welcome, <%= @current_user.name%>!
-  <form method='post' action='/sessions'>
-    <input type='hidden' name='_method' value='delete'>
-    <input style="float:left" type='submit' value='Sign out'>
-  </form>
-  <form method="get" action="/spaces/new">
-    <input style="float:left"type='submit' value='List space'>
-  </form>
+Welcome, <%= @current_user.name%>!
+<form method='post' action='/sessions'>
+  <input type='hidden' name='_method' value='delete'>
+  <input style="float:left" type='submit' value='Sign out'>
+</form>
+<form method="get" action="/spaces/new">
+  <input style="float:left"type='submit' value='List space'>
+</form>
 <% else %>
-  <form action='/sessions/new' method='get'>
-    <input style="float:right"type='submit' value='Sign in'class="btn btn-medium btn-primary">
-  </form>
-  <form action='/users/new' method='get'>
-    <input style="float:right"type='submit' value='Sign up'class="btn btn-medium btn-primary">
-  </form>
+<form action='/sessions/new' method='get'>
+  <input style="float:right"type='submit' value='Sign in'class="btn btn-medium btn-primary">
+</form>
+<form action='/users/new' method='get'>
+  <input style="float:right"type='submit' value='Sign up'class="btn btn-medium btn-primary">
+</form>
 <% end %>

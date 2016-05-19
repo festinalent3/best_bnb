@@ -308,15 +308,11 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/emmasjostrom/Projects/poopyface/best_bnb/app/models/date_range.rb": [
         1,
-        null,
-        1,
-        null,
-        1,
-        null,
         null,
         1,
         35,
@@ -687,6 +683,6 @@
         null
       ]
     },
-    "timestamp": 1463695358
+    "timestamp": 1463695423
   }
 }

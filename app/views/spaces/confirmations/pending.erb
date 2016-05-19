@@ -1,32 +1,32 @@
 <ul id='requests'>
 
-<% @user.spaces.each do |space| %>
-<% i = 0 %>
-<%= space.title %>
+  <% @user.spaces.each do |space| %>
+  <% i = 0 %>
+  <%= space.title %>
 
-<% space.requested_dates.length.times do %>
-<li>
+  <% space.requested_dates.length.times do %>
+  <li>
 
-<% hash = space.requested_dates[i] %>
-<% key = hash.keys[0] %>
+    <% hash = space.requested_dates[i] %>
+    <% key = hash.keys[0] %>
 
-<% @renter = User.get(key.to_s.to_i) %>
-Renter: <%= @renter.name %>
-<% dates = hash.values %>
-Dates:
-<%= check_in = dates[0].values[0] %>
-<%= check_out = dates[0].values[1] %>
-<% i += 1 %>
-<div class="approved_button">
-<form action="/spaces/confirmations/booked" method="post" >
-  <input type='hidden' name='space_id' value='<%= space.id %>'>
-  <input type='hidden' name='check_in_date' value='<%= check_in %>'>
-  <input type='hidden' name='check_out_date' value='<%= check_out %>'>
-  <input type="submit" value="Approve request">
-</form>
-</div>
-</li>
-<%end%>
+    <% @renter = User.get(key.to_s.to_i) %>
+    Renter: <%= @renter.name %>
+    <% dates = hash.values %>
+    Dates:
+    <%= check_in = dates[0].values[0] %>
+    <%= check_out = dates[0].values[1] %>
+    <% i += 1 %>
+    <div class="approved_button">
+      <form action="/spaces/confirmations/booked" method="post" >
+        <input type='hidden' name='space_id' value='<%= space.id %>'>
+        <input type='hidden' name='check_in_date' value='<%= check_in %>'>
+        <input type='hidden' name='check_out_date' value='<%= check_out %>'>
+        <input type="submit" value="Approve request">
+      </form>
+    </div>
+  </li>
+  <%end%>
 
-<%end%>
+  <%end%>
 </ul>

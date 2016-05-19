@@ -20,14 +20,14 @@ feature 'Edit Spaces' do
     expect(page).to have_button 'Submit changes'
   end
 
-  scenario 'user can submit their changes' do 
+  scenario 'user can submit their changes' do
     add_space
     click_button 'Edit your space'
     fill_in 'price', with: '22222.00'
     expect{(click_button 'Submit changes')}.not_to change(Space, :count)
   end
 
-  scenario 'updated space details are displayed' do 
+  scenario 'updated space details are displayed' do
     add_space
     click_button 'Edit your space'
     fill_in 'price', with: '22222.00'

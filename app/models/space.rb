@@ -12,8 +12,13 @@ class Space
   property :booked_dates, Object
   property :price, Integer
 
-  def req_dates
-    return self.requested_dates
+  def self.store_multiple_requests(space, check_in, check_out, user_id)
+    hashi = []
+    hashi.concat space.requested_dates
+    hashi << DateRange.request_dates(check_in, check_out, user_id)
+    space.update(:requested_dates => hashi)
   end
+
+
 
 end

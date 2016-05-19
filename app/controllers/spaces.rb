@@ -75,23 +75,7 @@ class Beast < Sinatra::Base
       params[:check_out_date],
       session[:user_id])])
    else
-
-    hashi = [@space.req_dates[0], DateRange.request_dates(params[:check_in_date],
-    params[:check_out_date],
-    session[:user_id])]
-    @space.update(:requested_dates => hashi)
-
-
-    # bajs = @space.req_dates
-    # p 'BAJS'
-    # p bajs
-    # hashi = bajs << DateRange.request_dates(params[:check_in_date],
-    # params[:check_out_date],
-    # session[:user_id])
-    # p 'HASHI'
-    # p hashi
-    # @space.update(:requested_dates => hashi)
-
+     Space.store_multiple_requests(@space, params[:check_in_date], params[:check_out_date], session[:user_id])
    end
     redirect '/spaces/confirmations/request'
   end

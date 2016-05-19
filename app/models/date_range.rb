@@ -19,7 +19,7 @@ class DateRange
   end
 
   def request_dates(from_date, to_date, user_id)
-    @requested_dates << {user_id => {:check_in_date => from_date, :check_out_date => to_date}}
+    @requested_dates << {user_id.to_s.to_sym => {:check_in_date => from_date, :check_out_date => to_date}}
   end
 
   private

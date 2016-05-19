@@ -3,7 +3,7 @@ describe DateRange do
   let(:to_date) { '2016-3-1' }
   let(:book_from) { '2016-2-15'}
   let(:book_to) { '2016-2-18' }
-  let(:user_id) { 5 }
+  let(:user_id) { :'5' }
 
   let(:daterange) { described_class.new(from_date, to_date) }
   let(:range) { [*Date.parse(from_date)..Date.parse(to_date)] }

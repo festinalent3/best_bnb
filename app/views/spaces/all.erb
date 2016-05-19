@@ -9,7 +9,7 @@
         $<%= space.price %> a night<br>
         Description:
         <%= space.description %><br>
-        Available from: <%= space.available_dates.range.first %>, to: <%= space.available_dates.range.last %>
+        Available from: <%= space.available_dates.first %>, to: <%= space.available_dates.last %>
 
         <% if @user == space.user %>
             <form method='post' action='/spaces/edit'>

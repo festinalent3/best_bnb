@@ -15,13 +15,14 @@ class Beast < Sinatra::Base
     end
   end
 
-  post '/spaces' do
-    if DateRange.new(params[:from_date], params[:to_date]).range
+  post '/spaces/new' do
+    if DateRange.generate_range(params[:from_date], params[:to_date])
       @space = Space.create(
         title: params[:title],
         price: params[:price],
         description: params[:description],
-        available_dates: DateRange.new(params[:from_date], params[:to_date]),
+        available_dates: DateRange.generate_range(params[:from_date], params[:to_date]),
+        requested_dates: [],
         user: User.get(session[:user_id]))
       flash.keep[:notice] = 'Space added'
       redirect to '/spaces/all'
@@ -35,19 +36,20 @@ class Beast < Sinatra::Base
     erb :'spaces/edit'
   end
 
-  post '/spaces/edit' do 
+  post '/spaces/edit' do
     session[:space_id] = params[:space_id]
     redirect '/spaces/edit'
   end
 
-  post '/spaces/update' do 
-    if DateRange.new(params[:from_date], params[:to_date]).range
+  post '/spaces/update' do
+    if DateRange.generate_range(params[:from_date], params[:to_date])
       @space = Space.get(params[:space_id].to_i)
       @space.update(
-        :title => params[:title], 
+        :title => params[:title],
         :price => params[:price],
         :description => params[:description],
-        :available_dates => DateRange.new(params[:from_date], params[:to_date])
+        :requested_dates => @space.requested_dates,
+        :available_dates => DateRange.generate_range(params[:from_date], params[:to_date])
       )
       redirect '/spaces/all'
     else
@@ -68,14 +70,28 @@ class Beast < Sinatra::Base
 
   post '/spaces/confirmations/request' do
     @space = Space.get(params[:space_id].to_i)
-    if @space.requested_dates.nil?
-     @space.update(:requested_dates => @space.available_dates.request_dates(params[:check_in_date],
-     params[:check_out_date],
-     session[:user_id]))
+    if @space.requested_dates == []
+      @space.update(:requested_dates => [DateRange.request_dates(params[:check_in_date],
+      params[:check_out_date],
+      session[:user_id])])
    else
-     @space.update(:requested_dates => @space.requested_dates+(@space.available_dates.request_dates(params[:check_in_date],
-     params[:check_out_date],
-     session[:user_id])))
+
+    hashi = [@space.req_dates[0], DateRange.request_dates(params[:check_in_date],
+    params[:check_out_date],
+    session[:user_id])]
+    @space.update(:requested_dates => hashi)
+
+
+    # bajs = @space.req_dates
+    # p 'BAJS'
+    # p bajs
+    # hashi = bajs << DateRange.request_dates(params[:check_in_date],
+    # params[:check_out_date],
+    # session[:user_id])
+    # p 'HASHI'
+    # p hashi
+    # @space.update(:requested_dates => hashi)
+
    end
     redirect '/spaces/confirmations/request'
   end
@@ -97,7 +113,9 @@ class Beast < Sinatra::Base
   post '/spaces/confirmations/booked' do
     session[:space_id] = params[:space_id]
     @space = Space.get(params[:space_id].to_i)
-    @space.available_dates.book_dates(params[:check_in_date], params[:check_out_date])
+    @space.update(:available_dates => DateRange.book_dates(params[:check_in_date],
+    params[:check_out_date],
+    @space.available_dates))
     redirect '/spaces/confirmations/booked'
   end
 end

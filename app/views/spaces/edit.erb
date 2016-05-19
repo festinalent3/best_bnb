@@ -16,17 +16,14 @@
   <p>Availability dates for your space</p>
   <label for="from_date">
     From:
-  <input type="date" name="from_date" value="<%= @space.available_dates.range.first %>" required>
+  <input type="date" name="from_date" value="<%= @space.available_dates.first %>" required>
   </label>
   <label for="to_date">
     To:
-  <input type="date" name="to_date" value="<%= @space.available_dates.range.last %>" required>
+  <input type="date" name="to_date" value="<%= @space.available_dates.last %>" required>
   </label>
   <input type='submit' value='Submit changes'/>
 </form>
 <form method="get" action='/spaces/all'>
   <input type="submit" value="Cancel"/>
 </form>
-
-
-

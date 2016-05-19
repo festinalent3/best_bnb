@@ -1,6 +1,8 @@
 class Space
 
   include DataMapper::Resource
+  belongs_to :user
+
 
   property :id, Serial
   property :title, String
@@ -10,6 +12,8 @@ class Space
   property :booked_dates, Object
   property :price, Integer
 
-  belongs_to :user
+  def req_dates
+    return self.requested_dates
+  end
 
 end

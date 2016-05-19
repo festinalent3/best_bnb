@@ -16,7 +16,7 @@
         Available from: <%= space.available_dates.range.first %>, to: <%= space.available_dates.range.last %>
 
         <% if @user == space.user %>
-            <form method='get' action='/spaces/edit'>
+            <form method='post' action='/spaces/edit'>
             <input type='hidden' name='space_id' value='<%= space.id %>'>
             <input type='submit' value='Edit your space'>
           </form>

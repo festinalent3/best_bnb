@@ -20,5 +20,23 @@ feature 'Edit Spaces' do
     expect(page).to have_button 'Submit changes'
   end
 
+  scenario 'user can submit their changes' do 
+    add_space
+    click_button 'Edit your space'
+    fill_in 'price', with: '22222.00'
+    expect{(click_button 'Submit changes')}.not_to change(Space, :count)
+  end
+
+  scenario 'updated space details are displayed' do 
+    add_space
+    click_button 'Edit your space'
+    fill_in 'price', with: '22222.00'
+    fill_in 'from_date', with: '2015-12-31'
+    fill_in 'to_date', with: '2016-01-31'
+    click_button 'Submit changes'
+    expect(page).not_to have_content("$99 a night")
+    expect(page).to have_content("$22222 a night")
+    expect(page).to have_content('Available from: 2015-12-31, to: 2016-01-31')
+  end
 
 end

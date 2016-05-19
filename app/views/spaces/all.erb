@@ -2,7 +2,7 @@
 <h1> Spaces Available </h1>
 </center>
   <ul id='spaces'>
-    <% @spaces.each do |space| %>
+    <% Space.all.each do |space| %>
       <li>
         <h3> Name of place: <%= space.title %></h3><br>
         <h4> Owner: <%= space.user.name %></h4><br>

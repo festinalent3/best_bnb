@@ -5,6 +5,8 @@ require 'sinatra/flash'
 require 'sinatra/partial'
 require 'tilt/erb'
 require 'pony'
+
+require_relative 'helpers'
 require_relative 'server'
 require_relative 'data_mapper_setup'
 require_relative 'controllers/users'

@@ -6,12 +6,7 @@ class Beast < Sinatra::Base
   end
 
   post '/users' do
-    @user = User.create(
-      name: params[:name],
-      email: params[:email],
-      password: params[:password],
-      password_confirmation: params[:password_confirmation]
-    )
+    create_new_user
     if @user.save
       # Pony.mail to: params[:email],
       #      from: 'thebeastteam@beast.com',

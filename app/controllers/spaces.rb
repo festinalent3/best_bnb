@@ -17,13 +17,7 @@ class Beast < Sinatra::Base
 
   post '/spaces/new' do
     if DateRange.generate_range(params[:from_date], params[:to_date])
-      @space = Space.create(
-        title: params[:title],
-        price: params[:price],
-        description: params[:description],
-        available_dates: DateRange.generate_range(params[:from_date], params[:to_date]),
-        requested_dates: [],
-        user: User.get(session[:user_id]))
+      create_new_space
       flash.keep[:notice] = 'Space added'
       redirect to '/spaces/all'
     else
@@ -43,14 +37,7 @@ class Beast < Sinatra::Base
 
   post '/spaces/update' do
     if DateRange.generate_range(params[:from_date], params[:to_date])
-      @space = Space.get(params[:space_id].to_i)
-      @space.update(
-        :title => params[:title],
-        :price => params[:price],
-        :description => params[:description],
-        :requested_dates => @space.requested_dates,
-        :available_dates => DateRange.generate_range(params[:from_date], params[:to_date])
-      )
+      update_space
       redirect '/spaces/all'
     else
       flash.keep[:notice] = 'You must update available dates!'
@@ -71,11 +58,9 @@ class Beast < Sinatra::Base
   post '/spaces/confirmations/request' do
     @space = Space.get(params[:space_id].to_i)
     if @space.requested_dates == []
-      @space.update(:requested_dates => [DateRange.request_dates(params[:check_in_date],
-      params[:check_out_date],
-      session[:user_id])])
+      add_first_request
    else
-     Space.store_multiple_requests(@space, params[:check_in_date], params[:check_out_date], session[:user_id])
+     add_more_requests
    end
     redirect '/spaces/confirmations/request'
   end
@@ -95,11 +80,7 @@ class Beast < Sinatra::Base
   end
 
   post '/spaces/confirmations/booked' do
-    session[:space_id] = params[:space_id]
-    @space = Space.get(params[:space_id].to_i)
-    @space.update(:available_dates => DateRange.book_dates(params[:check_in_date],
-    params[:check_out_date],
-    @space.available_dates))
+    book_space_these_dates
     redirect '/spaces/confirmations/booked'
   end
 end

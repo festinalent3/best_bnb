@@ -1,16 +1,23 @@
-<% @space = Space.get(@space_id) %>
-<%= @space.title %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-centered">
+      <h3><% @space = Space.get(@space_id) %>
+      <%= @space.title %></h3>
+      <form method="post" style="float:left"action="/spaces/confirmations/request">
+        <p>Dates of request</p>
+        <div class="form-group">
+          <label for="check_in_date">From:</label>
+          <input type="date" name="check_in_date"  class="form-control" required/>
+        </div>
+        <div class="form-group">
+          <label for="check_out_date">To:</label>
+          <input type="date" name="check_out_date" class="form-control" required/>
+        </div>
+        <input type="hidden" name ="space_id" value ="<%= @space_id %>">
+        <input type='submit' value='Request to rent!' class="btn btn-default">
+      </table>
+    </form>
 
-<br><br><form method="post" action="/spaces/confirmations/request">
-  <p>Availability dates for your space</p>
-  <label for="check_in_date">
-    From:
-    <input type="date" name="check_in_date">
-  </label>
-  <label for="check_out_date">
-    To:
-    <input type="date" name="check_out_date" >
-  </label>
-  <input type="hidden" name ="space_id" value ="<%= @space_id %>">
-  <input type='submit' value='Request to rent!'>
-</form>
+  </div>
+</div>
+</div>

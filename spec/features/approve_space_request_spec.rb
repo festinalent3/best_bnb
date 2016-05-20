@@ -69,7 +69,7 @@ feature 'approve space request' do
     expect(page).to have_content('2016-01-01')
     expect(page).to have_content('2016-01-06')
     within 'ul#requests' do
-     first('.approved_button').click_button 'Approve request'
+      first('.approved_button').click_button 'Approve request'
     end
     expect(page).to have_content('Request approved')
     expect(page).to have_content(':booked')

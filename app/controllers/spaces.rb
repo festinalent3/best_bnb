@@ -15,14 +15,9 @@ class Beast < Sinatra::Base
     end
   end
 
-  post '/spaces' do
-    if DateRange.new(params[:from_date], params[:to_date]).range
-      @space = Space.create(
-        title: params[:title],
-        price: params[:price],
-        description: params[:description],
-        available_dates: DateRange.new(params[:from_date], params[:to_date]),
-        user: User.get(session[:user_id]))
+  post '/spaces/new' do
+    if DateRange.generate_range(params[:from_date], params[:to_date])
+      create_new_space
       flash.keep[:notice] = 'Space added'
       redirect to '/spaces/all'
     else
@@ -35,20 +30,14 @@ class Beast < Sinatra::Base
     erb :'spaces/edit'
   end
 
-  post '/spaces/edit' do 
+  post '/spaces/edit' do
     session[:space_id] = params[:space_id]
     redirect '/spaces/edit'
   end
 
-  post '/spaces/update' do 
-    if DateRange.new(params[:from_date], params[:to_date]).range
-      @space = Space.get(params[:space_id].to_i)
-      @space.update(
-        :title => params[:title], 
-        :price => params[:price],
-        :description => params[:description],
-        :available_dates => DateRange.new(params[:from_date], params[:to_date])
-      )
+  post '/spaces/update' do
+    if DateRange.generate_range(params[:from_date], params[:to_date])
+      update_space
       redirect '/spaces/all'
     else
       flash.keep[:notice] = 'You must update available dates!'
@@ -68,15 +57,11 @@ class Beast < Sinatra::Base
 
   post '/spaces/confirmations/request' do
     @space = Space.get(params[:space_id].to_i)
-    if @space.requested_dates.nil?
-     @space.update(:requested_dates => @space.available_dates.request_dates(params[:check_in_date],
-     params[:check_out_date],
-     session[:user_id]))
-   else
-     @space.update(:requested_dates => @space.requested_dates+(@space.available_dates.request_dates(params[:check_in_date],
-     params[:check_out_date],
-     session[:user_id])))
-   end
+    if @space.requested_dates == []
+      add_first_request
+    else
+      add_more_requests
+    end
     redirect '/spaces/confirmations/request'
   end
 
@@ -95,9 +80,8 @@ class Beast < Sinatra::Base
   end
 
   post '/spaces/confirmations/booked' do
-    session[:space_id] = params[:space_id]
-    @space = Space.get(params[:space_id].to_i)
-    @space.available_dates.book_dates(params[:check_in_date], params[:check_out_date])
+    book_space_these_dates
     redirect '/spaces/confirmations/booked'
   end
+  
 end

@@ -13,7 +13,7 @@ class Beast < Sinatra::Base
       redirect('/spaces/all')
     else
       flash.now[:errors] = @user.errors.full_messages
-      erb(:'users/new')
+      redirect '/users/new'
     end
   end
 

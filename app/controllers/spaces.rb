@@ -81,7 +81,8 @@ class Beast < Sinatra::Base
 
   post '/spaces/confirmations/booked' do
     book_space_these_dates
+    remove_from_requested_dates
     redirect '/spaces/confirmations/booked'
   end
-  
+
 end

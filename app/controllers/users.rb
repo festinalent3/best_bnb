@@ -8,10 +8,7 @@ class Beast < Sinatra::Base
   post '/users' do
     create_new_user
     if @user.save
-      # Pony.mail to: params[:email],
-      #      from: 'thebeastteam@beast.com',
-      #      subject: 'Welcome to the BEAST!',
-      #      body: "Thanks for signing up"
+      EmailConfirmation.sign_up(@user.email)
       session[:user_id] = @user.id
       redirect('/spaces/all')
     else

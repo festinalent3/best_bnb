@@ -10,7 +10,8 @@ ruby '2.3.0'
   gem "sinatra-flash"
   gem "sinatra-partial"
   gem "dm-migrations"
-  gem "pony"
+  gem "mail"
+  gem "mailgun"
 
 group :test do
   gem "rspec"

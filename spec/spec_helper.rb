@@ -19,6 +19,10 @@ require 'rspec'
 require 'database_cleaner'
 require_relative 'web_helpers'
 
+Mail.defaults do
+  delivery_method :test
+end
+
 Capybara.app = Beast
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration

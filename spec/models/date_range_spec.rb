@@ -23,4 +23,11 @@ describe DateRange do
     expect(DateRange.request_dates(book_from, book_to, user_id)).to eq(requested_range)
   end
 
+  it 'can remove dates from a range' do
+    available_dates = DateRange.generate_range(from_date, to_date)
+    requested_dates = [DateRange.request_dates(book_from, book_to, user_id)]
+    available_dates = DateRange.book_dates(book_from, book_to, range)
+    expect(DateRange.update_requests(book_from, requested_dates)).to eq []
+  end
+
 end

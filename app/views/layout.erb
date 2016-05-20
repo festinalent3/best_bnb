@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BEAST BnB</title>
-  <link href="/css/bootstrap.css" rel="stylesheet">
-  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <title>BEAST BnB</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function() {
+      var date1 = new Date;
+      date1.setHours(0, 0, 0, 0);
+      date1.setDate(10);
+      var date2 = new Date;
+      date2.setHours(0, 0, 0, 0);
+      date2.setDate(23);
+      $("#check_in_date").datepicker({
+        beforeShowDay: function(date) {
+          return [date < date1 || date > date2, ""];
+        }
+      });
+      $( "#check_in_date" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1,
+        onClose: function( selectedDate ) {
+          $( "#check_out_date" ).datepicker( "option", "minDate", selectedDate );
+        }
+      });
+    });
+    
+    </script>
+  </head>
 
-<body>
-  <%= partial :welcome %>
-  <%= partial :flash %>
-  <%= yield %>
-</body><br>
+  <body>
+    <%= partial :welcome %>
+    <%= partial :flash %>
+    <%= yield %>
+  </body><br>
 </html>

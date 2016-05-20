@@ -1,6 +1,9 @@
 body {
   font-size: 16px;
   font-weight: 300;
+}
+
+.sign-in-page {
   line-height: 30px;
   text-align: center;
   background-image: url("http://cdn.garryhome.com/2016/03/27/the-hamilton-penthouse-corinthia-hotel-london-l-182fb49c0d5bf322.png");
@@ -21,6 +24,10 @@ body {
   background-color: #0ACBEE;
   color: #FFF;
   font-weight: bold;
+}
+
+.navbar-btn {
+  margin-top: -4px;
 }
 
 .caption {

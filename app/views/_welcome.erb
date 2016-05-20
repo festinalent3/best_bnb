@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/spaces/all">BEAST</a>
+      <a class="navbar-brand navbar-left" id="beast"href="/spaces/all">BEAST</a>
     </div>
     <% if current_user %>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <p class="navbar-text">Welcome, <%= @current_user.name%>!</p> 
+    <div class="collapse navbar-collapse" >
+      <p class="navbar-text">Welcome, <%= @current_user.name%>!</p>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/spaces/new">
           <form method="get" action="/spaces/new">
@@ -25,16 +25,22 @@
           </form>
         </a></li>
       </ul>
-    <% else %>
-      <form action='/sessions/new' method='get'>
-        <input style="float:right"type='submit' value='Sign in'class="btn btn-default navbar-btn">
-      </form>
-      <form action='/users/new' method='get'>
-        <input style="float:right"type='submit' value='Sign up'class="btn btn-default navbar-btn">
-      </form>
-    <% end %>
     </div>
+    <% else %>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/sessions/new">
+          <form action='/sessions/new' method='get'>
+            <input style="float:right"type='submit' value='Sign in'class="btn btn-default navbar-btn">
+          </form>
+        </a></li>
+        <li><a href="/users/new">
+          <form action='/users/new' method='get'>
+            <input style="float:right"type='submit' value='Sign up'class="btn btn-default navbar-btn">
+          </form>
+        </a></li>
+      </ul>
+    </div>
+    <% end %>
   </div>
 </nav>
-
-

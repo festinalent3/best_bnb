@@ -1,28 +1,32 @@
 <center>
   <h2> Spaces Available </h2>
 </center>
-<ul id='spaces'>
-  <% Space.all.each do |space| %>
-  <li>
-    <h3> Name of place: <%= space.title %></h3><br>
-    <h4> Owner: <%= space.user.name %></h4><br>
-    $<%= space.price %> a night<br>
-    Description:
-    <%= space.description %><br>
-    Available from: <%= space.available_dates.first %>, to: <%= space.available_dates.last %>
+<div class="container" id="space_container">
+  <p>
+    <ul id='spaces'>
+      <% Space.all.each do |space| %>
+      <li class='list-group' id="listings">
+        <h3><%= space.title %></h3><br>
+        <h4> Owner: <%= space.user.name %></h4><br>
+        $<%= space.price %> a night<br>
+        Description:
+        <%= space.description %><br>
+        Available from: <%= space.available_dates.first %>, to: <%= space.available_dates.last %>
 
-    <% if @user == space.user %>
-    <form method='post' action='/spaces/edit'>
-      <input type='hidden' name='space_id' value='<%= space.id %>'>
-      <input type='submit' value='Edit your space'>
-    </form>
-    <% else %>
-    <form method='post' action='/spaces/request'>
-      <input type='hidden' name='space_id' value='<%= space.id %>'>
-      <input type='submit' value='Rent this space'>
-    </form>
-    <% end %>
+        <% if @user == space.user %>
+        <form method='post' action='/spaces/edit'>
+          <input type='hidden' name='space_id' value='<%= space.id %>'>
+          <input type='submit' value='Edit your space'class="btn btn-default">
+        </form>
+        <% elsif session[:user_id] != nil %>
+        <form method='post' action='/spaces/request'>
+          <input type='hidden' name='space_id' value='<%= space.id %>'>
+          <input type='submit' value='Rent this space'class="btn btn-default">
+        </form>
+        <% end %>
 
-  </li>
-  <% end %>
-</ul>
+      </li>
+      <% end %>
+    </ul>
+  </p>
+</div>

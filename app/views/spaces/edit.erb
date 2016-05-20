@@ -1,29 +1,44 @@
-<% @space = Space.get(@space_id) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-centered">
+      <h2><% @space = Space.get(@space_id) %></h2>
+      <form method="post" style="float:left"action="/spaces/update">
+      <input type="hidden" name ="space_id" value ="<%= @space_id %>" class="form-control">
+      <table>
+        <div class="form-group">
+          <label for="title">Space title:</label>
+            <input type="text" name="title" value="<%= @space.title %>"class="form-control"/>
+        </div>
 
-<br><br>
-<form method="post" style="float:left"action="/spaces/update">
-  <input type="hidden" name ="space_id" value ="<%= @space_id %>">
-  <table>
-    <tr><td><label for="title">Space title:</label>
-      <td><input type="text" name="title" value="<%= @space.title %>"/>
-        <tr><td><label for="price">Price: </label>
-          <td><input type="number" name="price" value="<%= @space.price %>"/>
-            <tr><td><label for="description">Description:</label>
-              <td><textarea name="description" rows="5" cols="50" maxlength="500">
-                <%= @space.description %>
-              </textarea>
-            </table>
-            <p>Availability dates for your space</p>
-            <label for="from_date">
-              From:
-              <input type="date" name="from_date" value="<%= @space.available_dates.first %>" required>
-            </label>
-            <label for="to_date">
-              To:
-              <input type="date" name="to_date" value="<%= @space.available_dates.last %>" required>
-            </label>
-            <input type='submit' value='Submit changes'/>
-          </form>
-          <form method="get" action='/spaces/all'>
-            <input type="submit" value="Cancel"/>
-          </form>
+        <div class="form-group">
+          <label for="price">Price: </label>
+            <input type="number" name="price" value="<%= @space.price %>"class="form-control"/>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea name="description" rows="5" cols="50" maxlength="500"class="form-control">
+            <%=@space.description %>
+          </textarea>
+        </div>
+
+          <p>Availability dates for your space</p>
+          <div class="form-group">
+            <label for="from_date">From:</label>
+              <input type="date" name="from_date" value="<%= @space.available_dates.first %>" class="form-control"required>
+          </div>
+
+          <div class="form-group">
+            <label for="to_date">To:</label>
+              <input type="date" name="to_date" value="<%= @space.available_dates.last %>" class="form-control"required>
+          </div>
+            <input type='submit' value='Submit changes' class="btn btn-default">
+            <form method="get" action='/spaces/all'>
+              <input type="submit" value="Cancel"class="btn btn-default"/>
+            </form>
+      </table>
+      </form>
+
+    </div>
+  </div>
+</div>

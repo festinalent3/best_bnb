@@ -4,7 +4,7 @@ body {
 }
 
 #notice, #errors { 
-  position: absolute; 
+  position:absolute; 
   top: 14px; 
   right: 50%; 
   margin-left: auto; 
@@ -113,5 +113,9 @@ body {
 }
 
 #beast{
+  color: #FFFFFF;
+}
+
+#welcome{
   color: #FFFFFF;
 }

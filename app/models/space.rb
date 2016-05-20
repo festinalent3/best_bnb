@@ -11,9 +11,16 @@ class Space
   property :price, Integer
 
   def self.store_multiple_requests(space, check_in, check_out, user_id)
-    new_values = Array.new.concat space.requested_dates
+    new_values = Array.new.concat(space.requested_dates)
     new_values << DateRange.request_dates(check_in, check_out, user_id)
     space.attribute_set(:requested_dates, new_values)
+    space.save
+  end
+
+  def self.update_requested_dates(space, check_in)
+    old_values = Array.new.concat(space.requested_dates)
+    updated_values = DateRange.update_requests(check_in, old_values)
+    space.attribute_set(:requested_dates, updated_values)
     space.save
   end
 

@@ -51,4 +51,8 @@ module Helpers
     @space.available_dates))
   end
 
+  def remove_from_requested_dates
+    Space.update_requested_dates(@space, params[:check_in_date])
+  end
+
 end

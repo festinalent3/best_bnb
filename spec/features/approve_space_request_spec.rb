@@ -73,5 +73,6 @@ feature 'approve space request' do
     end
     expect(page).to have_content('Request approved')
     expect(page).to have_content(':booked')
+    expect(page).not_to have_content "2015-12-31"
   end
 end
